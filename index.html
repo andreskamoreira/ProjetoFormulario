@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu Treino</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h2>Vamos montar seu treino?</h2>
+        </div>
+
+        <div class="form-container">
+
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+
+            <div class="form-body">
+                <h1 class="form-title">Vamos nos conhecer melhor:</h1>
+                <p>Este momento é para nos conhecermos e entender qual sua necessidade!</p>
+                <form>
+                    <div class="box-input">
+                        <label for="name">Nome: <span class="required-field">*</span></label>
+                        <input 
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="block"
+                        placeholder="Escreva seu nome completo"
+                        minlength="10"
+                        maxlength="50"
+                        required
+                        />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="date_born">Data de nascimento: <span class="required-field">*</span></label>
+                        <input 
+                        type="date"
+                        name="date_born"
+                        id="date_born"
+                        class="block"
+                        required
+                        />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="price">Localidade: <span class="required-field">*</span></label>
+                        <input 
+                        type="number"
+                        name="price"
+                        id="price"
+                        class="block"
+                        placeholder="Onde você mora?"
+                        required
+                        />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="description">Descrição: <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block" placeholder="Nos dê um breve resumo sobre você, por exemplo: O que gosta de fazer no seu tempo livre ou com quem mora."></textarea>
+                    </div>
+                    
+                    <div class="box-input">
+                        <label for="interation">Interesse: <span class="required-field">*</span></label>
+                        <input 
+                        type="text"
+                        name="interation"
+                        id="interation"
+                        class="block"
+                        placeholder="Você busca emagrecimento ou hipertrófia?"
+                        required
+                        />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="height">Altura: <span class="required-field">*</span></label>
+                        <input 
+                        type="text"
+                        name="height"
+                        id="height"
+                        class="block"
+                        placeholder="Ex: 1,70"
+                        required
+                        />
+                    </div>
+
+                    <div class="box-input">
+                        <label for="weight">Peso: <span class="required-field">*</span></label>
+                        <input 
+                        type="text"
+                        name="weight"
+                        id="weight"
+                        class="block"
+                        placeholder="Ex: 60kg"
+                        required
+                        />
+                    </div>
+                    
+
+
+                    <div class="box-input">
+                        <label for="activite">Você prática alguma atividade fisíca? <span class="required-field">*</span></label>
+                        <div class="radio">
+                            <input type="radio" value="yes" name="activite">
+                            <label for="yes">Sim</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" value="no" name="activite">
+                            <label for="no">Não</label>
+                        </div>
+                    </div>
+
+                    <div class="optional-box">
+                        <p>Atividades físicas que você gosta:</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                type="checkbox"
+                                id="gym"
+                                name="optional[]"
+                                value="gym"
+                                >
+                                <label for="gym">Acadêmia</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox"
+                                id="crossfit"
+                                name="optional[]"
+                                value="crossfit"
+                                >
+                                <label for="crossfit">Crossfit</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox"
+                                id="beach_tenis"
+                                name="optional[]"
+                                value="beach_tenis"
+                                >
+                                <label for="beach_tenis">Beach Tênis</label>
+                            </li>
+                            <li>
+                                <input 
+                                type="checkbox"
+                                id="voley"
+                                name="optional[]"
+                                value="voley"
+                                >
+                                <label for="voley">Voley</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="box-input">
+                        <p>Fotos do corpo: <span class="required-field">*</span></p>
+                        <input 
+                        type="file"
+                        multiple
+                        accept="image/png, image/jpg"
+                        id="images"
+                        name="images"
+                        required
+                        />
+                    </div>
+
+                    <input type="submit" value="Enviar" class="btn-submit"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
